@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 
-namespace FindDependenies
+namespace FindDependencies
 {
     internal static class Program
     {
