@@ -1,5 +1,5 @@
 # FindDependencies
-This tool uses [Dependency Walker](http://www.dependencywalker.com/) to create batch script that copies all executable's dependencies found by given paths to separate folder. You can then copy them to the same directory with executable. It is an alternative of adding those path to the global Path environment variable.
+This tool uses [Dependency Walker](http://www.dependencywalker.com/) to create batch script that copies all executable's dependencies found by given paths to separate folder. You can then copy them to the same directory with executable. It is an alternative of adding those path to the global Path environment variable. Note that is searches for *unmanaged* dlls writtend, for example, on C++. 
 
 For example we have test.exe that depends on Qt, OpenMesh and Coin3D. We want to find all dlls it loads during startup and place them near test.exe. Download [FindDependencies](https://github.com/Unril/FindDependencies/releases/tag/v1.0), also download [Dependency Walker](http://www.dependencywalker.com/) and place near it. Open cmd and type: 
 ```bat
